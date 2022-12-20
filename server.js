@@ -16,7 +16,7 @@ mongoose
     useNewUrlParser: true,
   })
   .then((connection) => {
-    console.log(`Banco conectado ${DB}`);
+    console.log(`Banco conectado`);
   });
 
 app.listen(port, "127.0.0.1", () => {
