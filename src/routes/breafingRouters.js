@@ -7,5 +7,4 @@ router
   .get(breafingController.getAllBreafings)
   .post(breafingController.createBreafing);
 
-
 module.exports = router;
