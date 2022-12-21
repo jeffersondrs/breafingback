@@ -1,9 +1,10 @@
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const port = process.env.PORT || 3002;
+const path = require("path");
 const app = require("./app");
 
-dotenv.config({ path: "./config.env" });
+dotenv.config({ path: "./src/config.env" });
 
 const DB = process.env.DATABASE.replace(
   "<PASSWORD>",
@@ -14,7 +15,7 @@ mongoose
   .connect(DB, {
     useNewUrlParser: true,
   })
-  .then((connection) => {
+  .then(() => {
     console.log(`Banco conectado`);
   });
 

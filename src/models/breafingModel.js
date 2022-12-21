@@ -8,7 +8,11 @@ const brefingSchema = new mongoose.Schema({
   answer: {
     type: String,
     required: [true, "A question is required"],
-  }
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now,
+  },
 });
 
 const Breafing = mongoose.model("Breafing", brefingSchema);
