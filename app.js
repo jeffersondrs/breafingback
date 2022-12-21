@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const helmet = require("helmet");
-const router = require("./routes/breafingRouters");
+const router = require("./src/routes/breafingRouters");
 
 const app = express();
 

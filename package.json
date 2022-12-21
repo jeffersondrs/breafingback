@@ -4,8 +4,8 @@
   "description": "breafing",
   "main": "app.js",
   "scripts": {
-    "dev": "node src/server --watch",
-    "build": "node src/server"
+    "dev": "node server --watch",
+    "build": "node server"
   },
   "presets": [
     [
