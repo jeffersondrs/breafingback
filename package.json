@@ -83,7 +83,6 @@
     "core-js-compat": "^3.26.1",
     "debug": "^4.3.4",
     "depd": "^2.0.0",
-    "dotenv": "^16.0.3",
     "ee-first": "^1.1.1",
     "destroy": "^1.2.0",
     "electron-to-chromium": "^1.4.284",
@@ -219,7 +218,9 @@
     "webidl-conversions": "^7.0.0",
     "whatwg-url": "^11.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "dotenv": "^16.0.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
