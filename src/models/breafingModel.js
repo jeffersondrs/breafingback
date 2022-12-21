@@ -1,4 +1,5 @@
-const mongoose = require("mongoose");
+// Using Node.js `require()`
+const mongoose = require('mongoose');
 
 const brefingSchema = new mongoose.Schema({
   title: {
