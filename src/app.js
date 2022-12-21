@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const helmet = require("helmet");
 const serverless = require("serverless-http");
-const router = require("./src/routes/breafingRouters");
+const router = require("./routes/breafingRouters");
 
 const app = express();
 
