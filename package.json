@@ -28,7 +28,7 @@
     "babel-preset-es2015": "^6.24.1",
     "core-js": "^3.26.1",
     "cors": "^2.8.5",
-    "dotenv": "^16.0.2",
+    "dotenv": "^16.0.3",
     "express-session": "^1.17.3",
     "fs": "^0.0.1-security",
     "helmet": "^6.0.0",
