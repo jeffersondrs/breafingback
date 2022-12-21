@@ -1,9 +1,10 @@
-const express = require("express");
+const router = require("./src/routes/breafingRouters");
 const cors = require("cors");
 const helmet = require("helmet");
-const router = require("./src/routes/breafingRouters");
 
-const app = express();
+const express = require('express')
+const app = express()
+
 
 app.use(cors());
 app.use(helmet());
