@@ -4,6 +4,14 @@ const mongoose = require("mongoose");
 
 require("dotenv").config({ path: ".env" });
 
+module.exports = {
+  entry: './path/to/my/entry/file.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'my-first-webpack.bundle.js',
+  },
+};
+
 const port = process.env.PORT || 3002;
 const DB = process.env.DATABASE.replace(
   "<PASSWORD>",
