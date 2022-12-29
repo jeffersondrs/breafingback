@@ -5,11 +5,7 @@ const mongoose = require("mongoose");
 require("dotenv").config({ path: ".env" });
 
 module.exports = {
-  entry: './server.js',
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'my-first-webpack.bundle.js',
-  },
+  entry: 'server.js',
 };
 
 const port = process.env.PORT || 3002;
