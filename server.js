@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 require("dotenv").config({ path: ".env" });
 
 module.exports = {
-  entry: 'app.js',
+  entry: 'app.js server.js',
 };
 
 const port = process.env.PORT || 3002;
