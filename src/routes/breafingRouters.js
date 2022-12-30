@@ -1,11 +1,11 @@
-const express = require("express");
-const breafingController = require("../../src/controllers/breafingController");
+import express from "express";
+import { getAllBreafings, createBreafing } from "../controllers/breafingController.js";
 
 const router = express.Router();
 
 router
   .route("/")
-  .get(breafingController.getAllBreafings)
-  .post(breafingController.createBreafing);
+  .get(getAllBreafings)
+  .post(createBreafing);
 
-module.exports = router;
+export default router;

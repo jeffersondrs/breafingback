@@ -1,6 +1,6 @@
-const Breafing = require("../models/breafingModel");
+import Breafing from "../models/breafingModel.js"
 
-exports.getAllBreafings = async (req, res) => {
+export const getAllBreafings = async (req, res) => {
   try {
     const breafings = await Breafing.find();
 
@@ -19,7 +19,7 @@ exports.getAllBreafings = async (req, res) => {
   }
 };
 
-exports.createBreafing = async (req, res) => {
+export const createBreafing = async (req, res) => {
   try {
     const newBreafing = await Breafing.create(req.body);
 

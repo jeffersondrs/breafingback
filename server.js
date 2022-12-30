@@ -1,12 +1,9 @@
-const app = require("./app");
-const path = require("path");
-const mongoose = require("mongoose");
+import app from "./app.js";
+import path from "path";
+import mongoose from "mongoose";
+import dotenv from "dotenv";
 
-require("dotenv").config({ path: ".env" });
-
-module.exports = {
-  entry: 'app.js server.js',
-};
+dotenv.config({ path: ".env" });
 
 const port = process.env.PORT || 3002;
 const DB = process.env.DATABASE.replace(

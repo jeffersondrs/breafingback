@@ -1,5 +1,4 @@
-// Using Node.js `require()`
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const brefingSchema = new mongoose.Schema({
   title: {
@@ -18,4 +17,4 @@ const brefingSchema = new mongoose.Schema({
 
 const Breafing = mongoose.model("Breafing", brefingSchema);
 
-module.exports = Breafing;
+export default Breafing;
