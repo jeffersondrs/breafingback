@@ -11,4 +11,4 @@ app.use(express.json());
 
 app.use("/api/breafing", router);
 
-module.exports = app;
+module.exports = app
