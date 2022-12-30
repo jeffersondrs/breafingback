@@ -1,5 +1,4 @@
 import app from "./app.js";
-import path from "path";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 
@@ -22,3 +21,4 @@ mongoose
 app.listen(port, "127.0.0.1", () => {
   console.log(`App running on port ${port}...`);
 });
+
