@@ -5,11 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "netlify-lambda serve /"
+    "start": "node server.js"
   },
   "dependencies": {
-    "@netlify/functions": "^1.3.0",
-    "babel-preset-es2015": "^6.24.1",
     "core-js": "^3.26.1",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
@@ -18,7 +16,6 @@
     "helmet": "^6.0.0",
     "mongoose": "^6.6.0",
     "morgan": "^1.10.0",
-    "netlify-lambda": "^2.0.15",
     "path": "^0.12.7",
     "request": "^2.79.0"
   },
