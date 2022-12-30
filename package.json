@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "node --watch server.js",
     "start": "node server.js",
-    "build": "netlify-lambda build express"
+    "build": "netlify-lambda build ./"
   },
   "dependencies": {
     "body-parser": "^1.20.1",
