@@ -1,4 +1,5 @@
-import Breafing from "../models/breafingModel.js"
+import Breafing from "../models/breafingModel.js";
+import APIFeatures from "../util/apiFeatures.js";
 
 export const getAllBreafings = async (req, res) => {
   try {
@@ -36,4 +37,11 @@ export const createBreafing = async (req, res) => {
       message: "Invalid data sent!",
     });
   }
-}
+};
+export const deleteBreafing = async (req, res, next) => {
+  const breafing = await Breafing.findByIdAndDelete(req.params._id);
+  if (!breafing) {
+    return next(`No quest found with that ID: ${req.params._id}`, 404);
+  }
+  res.status(204).json({ status: "success", data: null });
+};
